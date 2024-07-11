@@ -1,0 +1,13 @@
+let a= new Date();
+let hours= a.getHours();
+let min=a.getMinutes();
+let sec=a.getSeconds();
+let dat=a.getDate();
+let mon=a.getMonth();
+let da=a.getDay();
+var ampm = hours >= 12 ? "PM":"AM";
+let day=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+let Month=['January','February','March','April','May','June','July','August','September','October','November','December'];
+let showDay=day[da];
+let showMonth=Month[mon];
+document.getElementById('t').innerHTML="Hours :"+hours+" "+ampm+"<br> Minutes: "+min+"<br> Seconds: "+sec+"<br> Date: "+dat+"<br> Month: "+showMonth+"<br> Day: "+showDay;
