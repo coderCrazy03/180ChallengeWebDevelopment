@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Day-6</title>
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hide()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"  viewBox="0 100 100 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+            <li class="hideOnMobile"><a href="#">Home</a></li>
+            <li class="hideOnMobile"><a href="#">About</a></li>
+            <li class="hideOnMobile"><a href="#">Contact</a></li>
+            <li class="hideOnMobile"><a href="#">Cart</a></li>
+            <li class="hideOnMobile"><a href="#">Order</a></li>
+            <li class="hideOnMobile"><a href="#">Profile</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Day-6</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Order</a></li>
+            <li><a href="#">Profile</a></li>
+            <li class="menu-buton" onclick="show()"> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"></path></svg></a></li>
+        </ul>
+    </nav>
+        <div class="gallery-container">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <div class="gallery-slider">
+                <div class="slide">
+                    <img src="photo/photo1.jpg" alt="Photo 1">
+                </div>
+                <div class="slide">
+                    <img src="photo/photo2.jpg" alt="Photo 2">
+                </div>
+                <div class="slide">
+                    <img src="photo/photo3.jpg" alt="Photo 3">
+                </div>
+                <div class="slide">
+                    <img src="photo/photo4.jpg" alt="Photo 3">
+                </div>
+                <div class="slide">
+                    <img src="photo/photo5.jpg" alt="Photo 3">
+                </div>
+                <div class="slide">
+                    <img src="photo/photo6.jpg" alt="Photo 3">
+                </div>
+                <div class="slide">
+                    <img src="photo/photo7.jpg" alt="Photo 3">
+                </div>
+                
+            </div>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
