@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body
+     {
+        background-color: #6e5896;
+        text-align: center;
+        justify-content: center;
+        font-family: sans-serif;
+        display: flex;
+        height: 50vh;
+     }
+     .bmi
+     {
+        width:800px;
+        margin:0 auto;
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        backdrop-filter: blur(10px);
+        display:flex;
+        flex-direction: column;
+        padding: 30px;
+        border-radius: 10px;
+        align-items: center;
+        height: 300px;
+     }
+     label {
+        margin-bottom: 10px;
+        font-size: 20px;
+        display: block; 
+    }
+    
+input[type="date"] {
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 8px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2196f3;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.1s ease; 
+}
+
+button:hover {
+    background-color: #0d8bf0;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+h2 {
+    font-size: 36px;
+    margin-top: 20px; 
+}
+    </style>
+</head>
+<body>
+    <div class="bmi">
+        <h2>BMI</h2>
+        <div>
+            <label for="weight">Enter weight (in kg)</label>
+            <input type="text" id="weight">
+            <label for="height">Enter Height (in meter)</label>
+            <input type="text" id="height">
+        </div>
+        <div>
+            <button id="cal">Calculate</button>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
